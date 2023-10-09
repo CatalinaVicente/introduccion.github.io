@@ -1,0 +1,51 @@
+p{
+    color: darkorange;
+}
+
+body {
+    background-color: black;
+    color: white; /*Color del fondo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    }
+    
+    h2 {
+        margin-top: 20px;
+    }
+    p {
+        transition: font-size 0.3s;
+    }
+    
+    p:hover {
+        font-size: 1.2em; /* Tamaño de fuente más grande al pasar el mouse */
+    }
+    
+
+/* Estilo para todas las imágenes */
+img {
+    width: 2000px; /* Establecer un ancho de 300px para todas las imágenes */
+    height: auto; /* Mantener la proporción original de la imagen */
+    margin: 0 auto; /* Opcional: centrar las imágenes horizontalmente */
+    display: block; /* Cambiar el valor de display a "block" para que las imágenes aparezcan una debajo de la otra */
+    transition: filter 0.3s, transform 0.3s; /* Transiciones para el filtro y la transformación */
+}
+
+img {
+    filter: blur(5px); /* Aplicar difuminación inicial */
+    transform: scale(0.9); /* Reducir el tamaño inicial */
+    transition: filter 0.5s, transform 0.5s; /* Transiciones para el filtro y la transformación */
+}
+
+img:hover {
+    filter: none; /* saca la difuminacion cuando paso el mouse */
+    transform: scale(1); /* Mostrar la imagen al tamaño original al pasar el mouse */
+}
+
+img {
+    max-width: 1000px; /* Establecer un ancho máximo de 4000px para todas las imágenes */
+    transition: filter 0.3s, transform 0.3s; /* Transiciones para el filtro y la transformación */
+}
+
